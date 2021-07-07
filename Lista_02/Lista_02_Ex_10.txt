@@ -1,0 +1,37 @@
+using System;
+
+namespace Lista_02_Ex_10
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			double nota1, nota2, nota3, media1, media2;
+			
+			Console.WriteLine("Digite a primeira nota");
+			nota1 = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Digite a segunda nota");
+			nota2 = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Digite a terceira nota");
+			nota3 = double.Parse(Console.ReadLine());
+			
+			media1 = ((nota1 * 5) + (nota2 * 5));
+			media2 = ((nota3 * 10) + (media1))/2;
+			
+			Console.WriteLine("O valor da média é igual " + media2);
+			
+			if (media2 >= 60)
+			{
+				Console.WriteLine("O aluno foi aprovado");
+			}
+			else
+			{
+				Console.WriteLine("O aluno foi reprovado");
+			}
+			
+		}
+	}
+}

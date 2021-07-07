@@ -1,0 +1,28 @@
+using System;
+
+namespace Lista_02_Ex_09
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num;
+            string numeros;
+
+            Console.WriteLine("Digite um número inteiro maior que 0: ");
+            num = int.Parse(Console.ReadLine());
+
+            if (num > 0)
+            {
+                numeros = num.ToString();
+                num = 0;
+                for (int x = 0; x < numeros.Length; x++)
+                    num += int.Parse(numeros.Substring(x,1));
+
+                Console.WriteLine("Soma dos algarismos: " + num);
+            } else
+                Console.WriteLine("Número inválido");
+		}
+	}
+}

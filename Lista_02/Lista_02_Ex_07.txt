@@ -1,0 +1,33 @@
+using System;
+
+namespace Lista_02_Ex_07
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			double salario, emprestimo, limite;
+			Console.WriteLine("Digite o valor do seu salário: ");
+			salario = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Digite o valor do seu emprestimo: ");
+			emprestimo = double.Parse(Console.ReadLine());
+			
+			limite = ((salario / 100) * 20);
+			//Console.WriteLine(limite);
+			
+			
+			
+			if (emprestimo > limite)
+			{
+				Console.WriteLine("Empréstimo não concedido");
+			}
+			else
+			{
+				Console.WriteLine("Empréstimo concedido");
+			}
+			
+		}
+	}
+}

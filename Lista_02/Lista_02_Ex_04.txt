@@ -1,0 +1,30 @@
+using System;
+
+namespace Lista_02_Ex_04
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num1, num2;
+			int dif;
+			Console.WriteLine("Digite o primeiro número: ");
+			num1 = int.Parse(Console.ReadLine());
+			Console.WriteLine("Digite o segundo número: ");
+			num2 = int.Parse(Console.ReadLine());
+			
+			if (num1 > num2)
+			{
+				dif = num1 - num2;
+				Console.WriteLine("O maior valor é " + num1 + " e a diferença entre o maior valor e o menor valor é " + dif);
+			}
+			else
+			{
+				dif = num2 - num1;
+				Console.WriteLine("O maior valor é " + num2 + " e a diferença entre o maior valor e o menor valor é " + dif);
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,29 @@
+using System;
+
+namespace Lista_02_Ex_14
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			float A, B, C;
+
+            Console.WriteLine("Digite os valores respectivamente de A, B, e C:");
+            A = float.Parse(Console.ReadLine());
+            B = float.Parse(Console.ReadLine());
+            C = float.Parse(Console.ReadLine());
+
+            if (A<(B+C) && B < (A + C) && C < (A + B))
+            {
+                if (A.Equals(B) && B.Equals(C))
+                    Console.WriteLine("É um triângulo equilátero");
+                else if(A.Equals(B)|| A.Equals(C) || B.Equals(C))
+                    Console.WriteLine("É um triângulo isóscele");
+                else
+                    Console.WriteLine("É um triângulo escaleno");
+            } else
+                Console.WriteLine("Não é um triângulo");
+		}
+	}
+}

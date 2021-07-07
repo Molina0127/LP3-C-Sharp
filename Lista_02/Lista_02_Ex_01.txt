@@ -1,0 +1,26 @@
+using System;
+
+namespace Lista_02_Ex_01
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num1, num2;
+			Console.WriteLine("Digite o primeiro número: ");
+			num1 = int.Parse(Console.ReadLine());
+			Console.WriteLine("Digite o segundo número: ");
+			num2 = int.Parse(Console.ReadLine());
+			
+			if (num1 > num2)
+			{
+				Console.WriteLine("O maior valor é " + num1);	
+			}
+			else
+			{
+				Console.WriteLine("O maior valor é " + num2);
+			}
+		}
+	}
+}

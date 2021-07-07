@@ -1,0 +1,21 @@
+using System;
+
+namespace Lista_02_Ex_02
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			float num;
+
+            Console.WriteLine("Digite um número positivo:");
+            num = float.Parse(Console.ReadLine());
+            if (num >= 0) {
+                Console.WriteLine(num+" elevado ao quadrado é "+num*num);
+                Console.WriteLine("Raíz de " + num + " é " + Math.Sqrt(num));
+            } else
+                Console.WriteLine("O valor digitado não é positivo");
+		}
+	}
+}

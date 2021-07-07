@@ -1,0 +1,25 @@
+using System;
+
+namespace Lista_02_Ex_15
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int idade, anos_trabalhados;
+
+            Console.WriteLine("Digite sua idade: ");
+            idade = int.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a quantia de anos que você já trabalhou: ");
+            anos_trabalhados = int.Parse(Console.ReadLine());
+
+            if (idade >= 65 || anos_trabalhados >= 30){
+                Console.WriteLine("Você já pode se aposentar");
+            } else if (idade >= 60 && anos_trabalhados >= 25)
+                Console.WriteLine("Você já pode se aposentar");
+            else
+                Console.WriteLine("Você ainda não pode se aposentar");
+		}
+	}
+}

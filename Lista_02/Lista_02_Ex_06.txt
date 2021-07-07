@@ -1,0 +1,51 @@
+using System;
+
+namespace Lista_02_Ex_06
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			double nota1, nota2, media;
+			Console.WriteLine("Digite a primeira nota: ");
+			nota1 = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Digite a segunda nota: ");
+			nota2 = double.Parse(Console.ReadLine());
+			
+			if ((nota1 > 0 && nota1 <= 10) && (nota2 > 0 && nota2 <= 10))
+			{
+				media = (nota1 + nota2) / 2;
+				Console.WriteLine("A média das notas é igual " + media);
+				
+				Console.WriteLine("A primeira nota é válida");
+				Console.WriteLine("A segunda nota é válida");
+			}
+			
+			Console.WriteLine();
+			
+			media = (nota1 + nota2) / 2;
+			Console.WriteLine("A média das notas é igual " + media);
+			
+			Console.WriteLine();
+			
+			if (nota1 < 0 || nota1 > 10){
+ 				Console.WriteLine("A primeira nota não é válida");
+			}
+			else{
+				Console.WriteLine("A primeira nota é válida");
+			}
+			
+			Console.WriteLine();
+			
+			if (nota2 < 0 || nota2 > 10){
+ 				Console.WriteLine("A segunda nota não é válida");
+			}
+			else {
+				Console.WriteLine("A segunda nota é válida");
+			}
+			
+		}
+	}
+}
