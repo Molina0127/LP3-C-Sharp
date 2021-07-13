@@ -1,0 +1,20 @@
+using System;
+
+namespace Lista_03_Ex_01
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			//Inicializando um vetor//
+			string[] alunos = new string[5];
+			alunos[0] = "João";
+			alunos[1] = "Maria";
+			alunos[2] = "Pedro";
+			alunos[3] = "Ana";
+			alunos[4] = "Carlos";
+			
+		}
+	}
+}
