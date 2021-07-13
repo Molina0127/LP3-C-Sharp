@@ -1,0 +1,17 @@
+using System;
+
+namespace Lista_01_Ex_05
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			float num;
+			
+			Console.WriteLine("Digite um número: ");
+			num = float.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Esse número dividido por 5 é igual a: " + (num / 5));
+		}
+	}
+}	

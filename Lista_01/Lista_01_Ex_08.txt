@@ -1,0 +1,17 @@
+using System;
+
+namespace Lista_01_Ex_08
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			double num;
+			
+			Console.WriteLine("Digite uma temperatura em graus Kelvin: ");
+			num = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("A temperatura em graus Celsius: " + (num - 273.15));
+		}
+	}
+}	

@@ -1,0 +1,21 @@
+using System;
+
+namespace Lista_01_Ex_03
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			int num;
+			int soma = 0;
+			
+			Console.WriteLine("Digite três números: ");
+			
+			for (int c = 0; c < 3; c++){
+				num = int.Parse(Console.ReadLine());
+				soma += num;
+			}
+			Console.WriteLine("O valor da soma é: " + soma);
+		}
+	}
+}

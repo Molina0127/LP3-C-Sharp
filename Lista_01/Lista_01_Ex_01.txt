@@ -1,0 +1,15 @@
+using System;
+
+namespace Lista_01_Ex_01
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			int num;
+			Console.WriteLine("Digite um número: ");
+			num = int.Parse(Console.ReadLine());
+			Console.WriteLine("O número digitado foi: " + num);
+		}
+	}
+}

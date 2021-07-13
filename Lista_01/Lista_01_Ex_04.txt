@@ -1,0 +1,17 @@
+using System;
+
+namespace Lista_01_Ex_04
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			float num;
+			
+			Console.WriteLine("Digite um número: ");
+			num = float.Parse(Console.ReadLine());
+			
+			Console.WriteLine("Esse número elevado ao quadrado é: " + (num*num));
+		}
+	}
+}

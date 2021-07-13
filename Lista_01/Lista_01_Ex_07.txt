@@ -1,0 +1,17 @@
+using System;
+
+namespace Lista_01_Ex_07
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			double num;
+			
+			Console.WriteLine("Digite uma temperatura em graus Fahrenheit: ");
+			num = double.Parse(Console.ReadLine());
+			
+			Console.WriteLine("A temperatura em graus Celsius: " + (5.0)*((num - 32)/9.0));
+		}
+	}
+}	
