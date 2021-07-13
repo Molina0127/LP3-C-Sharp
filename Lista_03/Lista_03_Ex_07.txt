@@ -1,0 +1,32 @@
+using System;
+
+namespace Lista_03_Ex_07
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			bool num = true;
+			int numero, i;
+			
+			do{
+				Console.WriteLine("Digite um valor positivo e par");
+				numero = int.Parse(Console.ReadLine());
+					
+				if (numero % 2 == 0 && numero > 0)
+				{
+					num = false;
+				}
+			} while (num == true);
+			
+			Console.WriteLine("\n//Números Pares de 0 a "+numero+"//");
+			
+			for (i = 0; i <= numero; i+=2){
+				Console.WriteLine(i);
+			}
+		}
+	}
+}
+
+

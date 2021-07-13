@@ -1,0 +1,35 @@
+using System;
+
+namespace Lista_03_Ex_04
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num, numero;
+			int numero_n;
+			
+			Console.WriteLine("Digite um valor inteiro");
+			numero_n = int.Parse(Console.ReadLine());
+			
+			
+			if (numero_n < 0)
+			{
+				numero_n *= -1;
+			}
+			
+			numero = -1;
+			
+			Console.WriteLine("\n\\Primeiros " +numero_n+ " Números Naturais Ímpares\\\n");
+				
+			for(num = 0; num < numero_n; num++)
+			{
+					
+				numero += 2;
+				Console.WriteLine(numero);
+			}
+			
+		}
+	}
+}

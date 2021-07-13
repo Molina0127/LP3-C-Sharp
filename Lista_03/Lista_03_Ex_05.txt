@@ -1,0 +1,49 @@
+using System;
+
+namespace Lista_03_Ex_05
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num;
+			int numero_n;
+			
+			Console.WriteLine("Digite um valor inteiro");
+			
+			numero_n = int.Parse(Console.ReadLine());
+			num = numero_n;
+			
+			while (numero_n % 11 != 0) 
+			{
+				numero_n++;	
+			}
+			
+			Console.WriteLine("O próximo múltiplo de 11 é " +numero_n);
+			
+			numero_n = num;
+			
+			while (numero_n % 13 != 0) 
+			{
+				numero_n++;
+				
+			}
+			
+			Console.WriteLine("O próximo múltiplo de 13 é " +numero_n);
+			
+			
+			numero_n = num;
+			while (numero_n % 17 != 0) 
+			{
+				numero_n++;
+				
+			}
+			
+			Console.WriteLine("O próximo múltiplo de 17 é " +numero_n);
+			
+		}
+	}
+}
+
+

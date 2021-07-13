@@ -1,0 +1,40 @@
+using System;
+
+namespace Lista_03_Ex_06
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int menor = 100;
+			int maior = 0;
+			int numeros = 0;
+			
+			//num = numero_n;
+			
+			do {
+				Console.WriteLine("Digite um valor inteiro");
+				numeros = int.Parse(Console.ReadLine());
+				
+				if (numeros < menor && numeros > 0){
+					menor = numeros;
+				}
+				
+				if (numeros > maior){
+					maior = numeros;
+				}
+				
+					
+				
+			} while (numeros > 0);
+			
+			Console.WriteLine("\nO maior valor digitado foi: " + maior);
+			Console.WriteLine("O menor valor digitado foi: " + menor);
+			
+
+		}
+	}
+}
+
+

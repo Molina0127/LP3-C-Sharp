@@ -1,0 +1,21 @@
+using System;
+
+namespace Lista_03_Ex_01
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			int num, result;
+			string numero;
+			
+			for (num = 1; num <= 5; num++){
+				result = num * 3;
+				
+
+				Console.WriteLine("O " +num+ "° múltiplo de 3 é igual a " + result);
+			}
+		}
+	}
+}
