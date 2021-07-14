@@ -1,0 +1,28 @@
+using System;
+
+namespace Quest_06_Ex_02
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			float[] notas = new float[10];
+			int i;
+			
+			//Código 1//
+			for(i = 0; i < 10; i++){
+				Console.Write("Digite a " + (i + 1) + " nota: ");
+				notas[i] = float.Parse(Console.ReadLine());
+			}
+			
+			//Código 2//
+			Console.Write("\n\nnotas:");
+			foreach(float nota in notas)
+			{
+				Console.Write(nota + " ");
+			}
+			
+		}
+	}
+}
