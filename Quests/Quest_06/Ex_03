@@ -1,0 +1,21 @@
+using System;
+
+namespace Quest_06_Ex_03
+{
+	
+	public class Program
+	{
+		public static void Main()
+		{
+			//Alimentando uma Matriz//
+			
+			string[,] dados_alunos = new string[3, 2];
+			dados_alunos[0,0] = "João";
+			dados_alunos[0,1] = "joao@gmail.com";
+			dados_alunos[1,0] = "Maria";
+			dados_alunos[1,1] = "maria@gmail.com";
+			dados_alunos[2,0] = "Carlos";
+			dados_alunos[2,1] = "carlos@gmail.com";
+		}
+	}
+}
