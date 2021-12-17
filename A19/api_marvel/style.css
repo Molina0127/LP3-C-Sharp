@@ -1,0 +1,14 @@
+img {
+  width: 300px;
+  border-bottom-style: solid;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.personagem {
+  width: 300px;
+  margin: 20px;
+  border-style: solid;
+  border-radius: 16px;
+  text-align: center;
+}

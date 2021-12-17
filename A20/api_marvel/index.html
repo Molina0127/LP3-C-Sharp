@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      
+      img {
+        width: 300px;
+        border-bottom-style: solid;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+      }
+
+      .personagem {
+        width: 300px;
+        margin: 20px;
+        border-style: solid;
+        border-radius: 16px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id='herois'
+    style=
+    "
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;    
+    "
+    >
+    </div>
+  </body>
+  <script>
+    const timestamp = '1639510170';
+    const apiKey = 'a1a1ecf2fe9ec34a04197c95fe6f91e9';
+    const md5 = 'c22cbd68bb703ed2e50271817c0d385a';
+
+    axios.get(`http://gateway.marvel.com/v1/public/characters?ts=${timestamp}&apikey=${apiKey}&hash=${md5}&limit=6`).then((response) => {
+      return response.json();
+    }).then((jsonParsed) => {
+        const divHero = document.querySelector("#herois");
+        
+        jsonParsed.data.results.forEach(element => {
+          const srcImage = element.thumbnail.path + "." + element.thumbnail.extension
+          const nameHero = element.name
+
+          createDivHero(srcImage, nameHero, divHero);
+        });
+      
+
+      console.log(jsonParsed);
+      })
+
+      function createDivHero(srcImage, nameHero, divToAppend) {
+        const divPai = document.createElement('div')
+        const divFilho = document.createElement('div')
+        const textName = document.createElement('text')
+        const img = document.createElement('img')
+
+        textName.textContent = nameHero
+        img.src = srcImage
+
+        divFilho.appendChild(img)
+        divFilho.appendChild(textName)
+        divPai.appendChild(divFilho)
+        divToAppend.appendChild(divPai)
+        
+        divPai.classList.add("personagem");
+      }
+    
+
+    
+    
+  </script>
+</html>
