@@ -26,18 +26,32 @@ const pesquisarCep = async() => {
     const cep = document.getElementById('cep').value.replace("-","");
     const url = `https://viacep.com.br/ws/${cep}/json/`;
     if (cepValido(cep)){
-        const dados = await fetch(url);
-        const endereco = await dados.json();
-        if (endereco.hasOwnProperty('erro')){
-            document.getElementById('endereco').value = 'CEP não encontrado!';
-        }else {
-            preencherFormulario(endereco);
-        }
-    }else{
-        document.getElementById('endereco').value = 'CEP incorreto!';
+      //const dados = await fetch(url);
+      //const addres = await fetch(url);
+      //const dados = await addres.json();
+      const endereco = axios.get(url)
+        .then((response) => preencherFormulario(response.data))
+        .catch((error) => {
+          console.log(error)
+        }) 
+  
+  
+      /*if (endereco.hasOwnProperty('error')){
+        document.getElementById('endereco').value = 'CEP não encontrado!';
+      }
+      else{
+        preencherFormulario(endereco);
+      }*/
+  
+  
+    }
+    else {
+      document.getElementById('endereco').value = 'CEP incorreto!';
     }
      
 }
 
 document.getElementById('cep')
         .addEventListener('focusout',pesquisarCep);
+
+       
